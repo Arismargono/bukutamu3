@@ -1,0 +1,48 @@
+HOW TO RUN THE SCHOOL INFORMATION SYSTEM APPLICATION
+
+PREREQUISITES:
+1. XAMPP must be installed on your system
+2. Apache and MySQL services in XAMPP must be running
+
+SETUP INSTRUCTIONS:
+
+1. DATABASE SETUP:
+   Option A (Recommended): Run the complete database setup
+   a. Make sure MySQL service is running in XAMPP
+   b. Double-click on "setup_database.bat" to create all tables and the admin user
+   
+   Option B: Use the original database creation script
+   a. Make sure MySQL service is running in XAMPP
+   b. Double-click on "create_database.bat" to create the database
+
+2. RUNNING THE APPLICATION:
+   a. Make sure Apache service is running in XAMPP
+   b. Open your web browser
+   c. Go to: http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/
+
+3. LOGIN TO THE APPLICATION:
+   After the setup is complete, you can log in with:
+   - Username: admin
+   - Password: admin123
+
+TESTING THE CONNECTION:
+   You can test if the database connection is working by going to:
+   http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/test_connection.php
+
+TROUBLESHOOTING LOGIN ISSUES:
+   If you can't login with username "admin" and password "admin123":
+   1. Check if the admin user exists:
+      Go to: http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/check_admin_user.php
+      
+   2. Reset the admin user:
+      Go to: http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/reset_admin_user.php
+      
+   3. Try to login again at:
+      http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/login.php
+
+TROUBLESHOOTING:
+- If you get database connection errors, make sure MySQL is running in XAMPP
+- If the page doesn't load, make sure Apache is running in XAMPP
+- If login fails, make sure you ran the setup_database.bat script
+
+For any issues, please check that both Apache and MySQL services are running in XAMPP Control Panel.

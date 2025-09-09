@@ -1,0 +1,50 @@
+TROUBLESHOOTING: "Username atau password salah" ERROR
+
+If you're getting "Username atau password salah" when trying to login with username "admin" and password "admin123", follow these steps:
+
+STEP 1: CHECK DATABASE CONNECTION
+1. Go to: http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/test_connection.php
+2. Verify that the database connection is working
+
+STEP 2: SETUP DATABASE (IF TABLES DON'T EXIST)
+If the test_connection.php shows that tables don't exist:
+1. Double-click on setup_database.bat
+2. This will create all necessary tables and the admin user
+
+STEP 3: DEBUG THE LOGIN PROCESS
+1. Go to: http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/debug_login.php
+2. Check if users exist in the database
+3. Verify if the password verification is working correctly
+
+STEP 4: TEST THE QUERY FUNCTION
+1. Go to: http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/test_execute_query.php
+2. Check if the executeQuery function is working properly
+
+STEP 5: RESET THE ADMIN USER
+1. Go to: http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/reset_admin_user.php
+2. This will ensure the admin user exists with the correct password
+
+STEP 6: TRY TO LOGIN AGAIN
+1. Go to: http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/login.php
+2. Enter username: admin
+3. Enter password: admin123
+
+COMMON ISSUES AND SOLUTIONS:
+
+1. Database connection failed:
+   - Make sure MySQL service is running in XAMPP
+   - Check that the database "sman6_db" exists
+
+2. No users in database:
+   - Run the setup_database.bat script to create all tables
+   - Or run reset_admin_user.php to create just the admin user
+
+3. Password verification failed:
+   - The password hash in the database might be corrupted
+   - Run reset_admin_user.php to fix this
+
+4. Query execution issues:
+   - The executeQuery function might not be working correctly
+   - Check the error logs in XAMPP for more details
+
+If none of these steps work, please check the Apache error logs in XAMPP for more detailed error messages.

@@ -1,0 +1,27 @@
+HOW TO FIX LOGIN ISSUE WITH ADMIN USER
+
+If you're unable to login with username "admin" and password "admin123", follow these steps:
+
+1. CHECK IF THE ADMIN USER EXISTS:
+   a. Open your web browser
+   b. Go to: http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/check_admin_user.php
+   c. This will show you if the admin user exists and if the password is correct
+
+2. RESET THE ADMIN USER (if needed):
+   a. Go to: http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/reset_admin_user.php
+   b. This will create or reset the admin user with username "admin" and password "admin123"
+
+3. TRY TO LOGIN AGAIN:
+   a. Go to: http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/login.php
+   b. Enter username: admin
+   c. Enter password: admin123
+
+4. IF YOU STILL CAN'T LOGIN:
+   a. Check the error logs in XAMPP
+   b. Make sure both Apache and MySQL services are running
+   c. Verify that you've run the create_database.bat script
+
+For any issues, please check:
+- That the database was created successfully
+- That the users table exists
+- That the admin user exists with the correct password hash

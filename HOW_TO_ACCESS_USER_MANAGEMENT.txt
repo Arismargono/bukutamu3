@@ -1,0 +1,16 @@
+HOW TO ACCESS USER MANAGEMENT
+
+1. Start XAMPP Control Panel
+2. Start Apache and MySQL services
+3. Open your web browser
+4. Go to: http://localhost/sman6/user_management.php
+5. Login with username: admin and password: admin123
+
+If you get a database error, you may need to:
+1. Go to http://localhost/sman6/setup_database.php to initialize the database
+2. Then try accessing the user management page again
+
+Alternatively, you can also access user management from the dashboard:
+1. Go to: http://localhost/sman6/login.php
+2. Login with username: admin and password: admin123
+3. Once logged in, click on "Manajemen User" in the left sidebar

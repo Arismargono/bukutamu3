@@ -1,0 +1,32 @@
+HOW TO RUN THE APPLICATION
+
+This is a PHP-based web application for managing school information at SMA Negeri 6 Surakarta.
+
+PREREQUISITES:
+1. PHP 7.4 or higher must be installed on your system
+2. A web browser (Chrome, Firefox, Edge, etc.)
+
+OPTIONS TO RUN THE APPLICATION:
+
+OPTION 1: Using PHP Built-in Development Server (Recommended for testing)
+1. Make sure PHP is installed and added to your system PATH
+2. Double-click on "start_server.bat" to start the server
+3. Open your web browser and go to: http://localhost:8000
+
+OPTION 2: Using XAMPP (Recommended for Windows users)
+1. Download and install XAMPP from https://www.apachefriends.org/index.html
+2. Copy the entire project folder to C:\xampp\htdocs\
+3. Start Apache from the XAMPP Control Panel
+4. Open your web browser and go to: 
+   http://localhost/SISTEM%20INFORMASI%20SMA%20NEGERI%206%20SURAKARTA/
+
+LOGIN CREDENTIALS:
+Username: admin
+Password: admin123
+
+If you encounter any issues:
+1. Make sure PHP is properly installed
+2. Check that port 8000 is not being used by another application
+3. Ensure that the database file in the "database" folder has proper read/write permissions
+
+For more information, please refer to the README.md file.
